@@ -9,10 +9,10 @@ This is a comprehensive Data warehosue project involving:
 
 # Reports
 
-![Guide Page](/PowerBI/Reports/Guide.png)
-![Apart Page](/PowerBI/Reports/Apart.png)
-![Crime Page](/PowerBI/Reports/Crime.png)
-![Cheapest Apartment](/PowerBI/Reports/CheapestApart.png)
-![Crime around cheapest apartment](/PowerBI/Reports/CrimeAroundCheapest.png)
+![Guide Page](/DataWarehouseProject/PowerBI/Reports/Guide.png)
+![Apart Page](/DataWarehouseProject/PowerBI/Reports/Apart.png)
+![Crime Page](/DataWarehouseProject/PowerBI/Reports/Crime.png)
+![Cheapest Apartment](/DataWarehouseProject/PowerBI/Reports/CheapestApart.png)
+![Crime around cheapest apartment](/DataWarehouseProject/PowerBI/Reports/CrimeAroundCheapest.png)
 
 
