@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+<?xml version="1.0"?>
+=======
+<?xml version="1.0"?>
+>>>>>>> 5d57737d3c1acf3dd8b7b0012bdeba8a53657fef
+<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS" />

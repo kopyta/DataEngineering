@@ -1,0 +1,2703 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/9/2024 3:44:40 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-4E5QONU7"
+  DTS:CreatorName="LAPTOP-4E5QONU7\tymek"
+  DTS:DTSID="{54931E86-0213-45B4-903A-78921A2BC245}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="DataLoading_SCD2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{FFEC02DB-F4D0-441F-BA17-562CB3534B98}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[flat_file_connection_apartments_verification_scd2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{44F14B5A-979E-4C10-97EA-30CF76434D7A}"
+      DTS:ObjectName="flat_file_connection_apartments_verification_scd2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\MINI\sem_8\HD\DataWarehouseProject\data_preparation\csv\apartments_verification_scd2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{FF8CD5C2-084E-41F4-9E2E-58FA712E0E92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unnamed  0"
+              DTS:DTSID="{BC3ED485-7697-494F-89B2-ED7C220905DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="category"
+              DTS:DTSID="{A78560D3-E9A7-480A-8E8F-E819A40575E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{583D4EF1-B2A2-4E13-BBDB-320E4DBF9E89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body"
+              DTS:DTSID="{F0DD2AC5-DF4E-4179-9FBC-121320F62A06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="amenities"
+              DTS:DTSID="{7700616E-098B-4974-8700-A30F1F33288A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bathrooms"
+              DTS:DTSID="{4E082C94-A006-4944-A60C-42729D3BAD64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bedrooms"
+              DTS:DTSID="{5ECCAAE0-7191-4CB2-8A90-2175F3B2C364}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="currency"
+              DTS:DTSID="{764FFF3F-87EC-4D62-A044-BBD5E7457D6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fee"
+              DTS:DTSID="{D9C642B8-010E-43AD-8AFB-3082CE8345E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="has_photo"
+              DTS:DTSID="{25C96981-1350-4289-8A02-24ABCFB559C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pets_allowed"
+              DTS:DTSID="{D11D6D02-DBA0-4144-A1D2-2204B27107DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{0E2CA381-9F86-4F36-9B68-DEE67D4C02F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price_display"
+              DTS:DTSID="{5EB3790A-109A-41E6-904E-D523B7F9C9D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price_type"
+              DTS:DTSID="{6D097F53-D823-4E82-AAAB-0F597A7EBD0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="square_feet"
+              DTS:DTSID="{471DCE3A-93B3-4832-90D8-947EB45887F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address"
+              DTS:DTSID="{E57E822C-B484-400B-A020-88820F838A45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cityname"
+              DTS:DTSID="{22E14DA0-5B79-4846-BB6D-DCA67932DD44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{D8F79C8F-AA96-405C-A973-40716D496092}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{95ED52AE-E28F-4DE4-81C1-38CD72144804}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{D35B2E26-73E6-4435-898B-DB29EA118D49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="source"
+              DTS:DTSID="{13E1B91D-570F-4743-B4C5-C9263F3D348C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="time"
+              DTS:DTSID="{3ABFC0AC-CB83-4537-9758-9A34C29F2C97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ApartmentID"
+              DTS:DTSID="{9AE58C5F-5668-4030-A2BB-8CD3FA93E867}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1A0FE12F-CAC3-4CCE-8680-5D728A3579DE}"
+      DTS:ObjectName="LAPTOP-4E5QONU7.ApartmentsxCrimeDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-4E5QONU7;Initial Catalog=ApartmentsxCrimeDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{1A0FE12F-CAC3-4CCE-8680-5D728A3579DE}LAPTOP-4E5QONU7.ApartmentsxCrimeDWH;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\load apartment - update"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{b504af0f-fa89-4635-b34b-e32c0f0c17a8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load apartment - update"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\load apartment - update\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input].Columns[cityname]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cityname"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[cityname]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Conditional Split.Outputs[citynamefiltered]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="citynamefiltered"
+                  synchronousInputId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[cityname]} == "Los Angeles"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">cityname == "Los Angeles"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Conditional Split 1"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[allowsCats]"
+                      cachedDataType="bool"
+                      cachedName="allowsCats"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[allowsDogs]"
+                      cachedDataType="bool"
+                      cachedName="allowsDogs"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[hasDishwasher]"
+                      cachedDataType="bool"
+                      cachedName="hasDishwasher"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[CurrentallowsDogs]"
+                      cachedDataType="bool"
+                      cachedName="CurrentallowsDogs"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsDogs]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[CurrentallowsCats]"
+                      cachedDataType="bool"
+                      cachedName="CurrentallowsCats"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsCats]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input].Columns[CurrenthasDishwasher]"
+                      cachedDataType="bool"
+                      cachedName="CurrenthasDishwasher"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrenthasDishwasher]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Conditional Split 1.Outputs[DataModified]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="DataModified"
+                  synchronousInputId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]} != #{Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsCats]} || #{Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]} != #{Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsDogs]} || #{Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]} != #{Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrenthasDishwasher]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">allowsCats != CurrentallowsCats || allowsDogs != CurrentallowsDogs || hasDishwasher != CurrenthasDishwasher</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input].Columns[has_photo]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="has_photo"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[has_photo]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input].Columns[pets_allowed]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="pets_allowed"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[pets_allowed]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input].Columns[amenities]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="amenities"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[LoadTimestamp]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[LoadTimestamp]"
+                      name="LoadTimestamp"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]"
+                      name="allowsCats"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[pets_allowed]},"Cats",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(FINDSTRING(pets_allowed,"Cats",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]"
+                      name="allowsDogs"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[pets_allowed]},"Dogs",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(FINDSTRING(pets_allowed,"Dogs",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPhoto]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPhoto]"
+                      name="hasPhoto"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[has_photo]},"Yes",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(FINDSTRING(has_photo,"Yes",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasParking]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasParking]"
+                      name="hasParking"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Parking",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Parking",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasGym]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasGym]"
+                      name="hasGym"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Gym",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Gym",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPool]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPool]"
+                      name="hasPool"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Pool",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Pool",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]"
+                      name="hasDishwasher"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Dishwasher",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Dishwasher",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasElevator]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasElevator]"
+                      name="hasElevator"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Elevator",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Elevator",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasStorage]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasStorage]"
+                      name="hasStorage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Storage",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Storage",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasFireplace]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasFireplace]"
+                      name="hasFireplace"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)([ISNULL](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]}) ? 0 : [FINDSTRING](#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]},"Fireplace",1) &gt; 0 ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(ISNULL(amenities) ? 0 : FINDSTRING(amenities,"Fireplace",1) &gt; 0 ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load apartment - update\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[flat_file_connection_apartments_verification_scd2]"
+                  connectionManagerRefId="Package.ConnectionManagers[flat_file_connection_apartments_verification_scd2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[amenities]"
+                      length="500"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[amenities]"
+                      name="amenities"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bathrooms]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bathrooms]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bathrooms]"
+                      name="Bathrooms"
+                      precision="2"
+                      scale="1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bedrooms]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bedrooms]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bedrooms]"
+                      name="Bedrooms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[has_photo]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[has_photo]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[has_photo]"
+                      name="has_photo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[pets_allowed]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pets_allowed]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[pets_allowed]"
+                      name="pets_allowed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Price]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Price]"
+                      name="Price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[SquareFeet]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[square_feet]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[SquareFeet]"
+                      name="SquareFeet"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[cityname]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cityname]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[cityname]"
+                      name="cityname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[latitude]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
+                      name="Latitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[longitude]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      name="Longitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Source]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[source]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Source]"
+                      name="Source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ApartmentID]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]"
+                      name="ApartmentSourceID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Currency]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[currency]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Currency]"
+                      name="Currency"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[PaymentFrequency]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price_type]"
+                      length="50"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[PaymentFrequency]"
+                      name="PaymentFrequency"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Unnamed  0]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Unnamed  0" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="category" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[body]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="body" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[amenities]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="amenities" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bathrooms]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="bathrooms" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bedrooms]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="bedrooms" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[currency]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="currency" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fee]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="fee" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[has_photo]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="has_photo" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pets_allowed]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="pets_allowed" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price_display]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="price_display" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price_type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="price_type" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[square_feet]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cityname]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="cityname" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[source]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="source" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[time]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="time" />
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ApartmentID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ApartmentID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Insert Rows 1"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Insert Rows 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">INSERT INTO DimApartment 
+	(Bathrooms, Bedrooms,
+	SquareFeet, ApartmentSourceID,
+	allowsCats, allowsDogs, hasPhoto, hasParking, hasGym, hasPool, hasDishwasher,
+	hasElevator, hasStorage, hasFireplace,
+	ValidFromDate, ValidToDate, ActiveFlag)
+VALUES 
+	(?, ?,
+	?, ?,
+	?, ?, ?, ?, ?, ?, ?,
+	?, ?, ?,
+	CONVERT(DATETIME, '1900-01-01 00:00:00.000', 21),
+	CONVERT(DATETIME, '9999-12-31 23:59:59.997', 21),
+	1
+)</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load apartment - update\Insert Rows 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[Bathrooms]"
+                      cachedDataType="numeric"
+                      cachedName="Bathrooms"
+                      cachedPrecision="2"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bathrooms]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[Bedrooms]"
+                      cachedDataType="i4"
+                      cachedName="Bedrooms"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bedrooms]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[SquareFeet]"
+                      cachedDataType="numeric"
+                      cachedName="SquareFeet"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[SquareFeet]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[ApartmentSourceID]"
+                      cachedDataType="i8"
+                      cachedName="ApartmentSourceID"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[allowsCats]"
+                      cachedDataType="bool"
+                      cachedName="allowsCats"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[allowsDogs]"
+                      cachedDataType="bool"
+                      cachedName="allowsDogs"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasPhoto]"
+                      cachedDataType="bool"
+                      cachedName="hasPhoto"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPhoto]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasParking]"
+                      cachedDataType="bool"
+                      cachedName="hasParking"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasParking]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasGym]"
+                      cachedDataType="bool"
+                      cachedName="hasGym"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasGym]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasPool]"
+                      cachedDataType="bool"
+                      cachedName="hasPool"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPool]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasDishwasher]"
+                      cachedDataType="bool"
+                      cachedName="hasDishwasher"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasElevator]"
+                      cachedDataType="bool"
+                      cachedName="hasElevator"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasElevator]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasStorage]"
+                      cachedDataType="bool"
+                      cachedName="hasStorage"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_12]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasStorage]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].Columns[hasFireplace]"
+                      cachedDataType="bool"
+                      cachedName="hasFireplace"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_13]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasFireplace]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="numeric"
+                      name="Param_0"
+                      precision="2"
+                      scale="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="numeric"
+                      name="Param_2"
+                      precision="18">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      dataType="i8"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      dataType="bool"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      dataType="bool"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      dataType="bool"
+                      name="Param_6">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      dataType="bool"
+                      name="Param_7">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      dataType="bool"
+                      name="Param_8">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                      dataType="bool"
+                      name="Param_9">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                      dataType="bool"
+                      name="Param_10">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
+                      dataType="bool"
+                      name="Param_11">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_12]"
+                      dataType="bool"
+                      name="Param_12">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input].ExternalColumns[Param_13]"
+                      dataType="bool"
+                      name="Param_13">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Insert Rows 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Insert Rows 2"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Insert Rows 2"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">INSERT INTO DimApartment 
+	(Bathrooms, Bedrooms,
+	SquareFeet, ApartmentSourceID,
+	allowsCats, allowsDogs, hasPhoto, hasParking, hasGym, hasPool, hasDishwasher,
+	hasElevator, hasStorage, hasFireplace,
+	ValidFromDate, ValidToDate, ActiveFlag)
+VALUES 
+	(?, ?,
+	?, ?,
+	?, ?, ?, ?, ?, ?, ?,
+	?, ?, ?,
+	?,
+	CONVERT(DATETIME, '9999-12-31 23:59:59.997', 21),
+	1
+)</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load apartment - update\Insert Rows 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[Bathrooms]"
+                      cachedDataType="numeric"
+                      cachedName="Bathrooms"
+                      cachedPrecision="2"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bathrooms]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[Bedrooms]"
+                      cachedDataType="i4"
+                      cachedName="Bedrooms"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[Bedrooms]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[SquareFeet]"
+                      cachedDataType="numeric"
+                      cachedName="SquareFeet"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[SquareFeet]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[ApartmentSourceID]"
+                      cachedDataType="i8"
+                      cachedName="ApartmentSourceID"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[allowsCats]"
+                      cachedDataType="bool"
+                      cachedName="allowsCats"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsCats]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[allowsDogs]"
+                      cachedDataType="bool"
+                      cachedName="allowsDogs"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[allowsDogs]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasPhoto]"
+                      cachedDataType="bool"
+                      cachedName="hasPhoto"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPhoto]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasParking]"
+                      cachedDataType="bool"
+                      cachedName="hasParking"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasParking]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasGym]"
+                      cachedDataType="bool"
+                      cachedName="hasGym"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasGym]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasPool]"
+                      cachedDataType="bool"
+                      cachedName="hasPool"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasPool]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasDishwasher]"
+                      cachedDataType="bool"
+                      cachedName="hasDishwasher"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasDishwasher]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasElevator]"
+                      cachedDataType="bool"
+                      cachedName="hasElevator"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasElevator]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasStorage]"
+                      cachedDataType="bool"
+                      cachedName="hasStorage"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_12]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasStorage]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[hasFireplace]"
+                      cachedDataType="bool"
+                      cachedName="hasFireplace"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_13]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[hasFireplace]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].Columns[LoadTimestamp]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoadTimestamp"
+                      externalMetadataColumnId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_14]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[LoadTimestamp]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="numeric"
+                      name="Param_0"
+                      precision="2"
+                      scale="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="numeric"
+                      name="Param_2"
+                      precision="18">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      dataType="i8"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      dataType="bool"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      dataType="bool"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      dataType="bool"
+                      name="Param_6">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      dataType="bool"
+                      name="Param_7">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      dataType="bool"
+                      name="Param_8">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                      dataType="bool"
+                      name="Param_9">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                      dataType="bool"
+                      name="Param_10">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
+                      dataType="bool"
+                      name="Param_11">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_12]"
+                      dataType="bool"
+                      name="Param_12">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_13]"
+                      dataType="bool"
+                      name="Param_13">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input].ExternalColumns[Param_14]"
+                      dataType="dbTimeStamp"
+                      name="Param_14">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Insert Rows 2.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Lookup apartments exists"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup apartments exists"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT ApartmentSourceID,allowsCats, allowsDogs, hasDishwasher FROM [ApartmentsxCrimeDWH].[dbo].[DimApartment]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT ApartmentSourceID,allowsCats, allowsDogs, hasDishwasher FROM [ApartmentsxCrimeDWH].[dbo].[DimApartment]) [refTable]
+where [refTable].[ApartmentSourceID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ApartmentSourceID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="allowsCats" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="allowsDogs" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="hasDishwasher" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load apartment - update\Lookup apartments exists.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input].Columns[ApartmentSourceID]"
+                      cachedDataType="i8"
+                      cachedName="ApartmentSourceID"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">ApartmentSourceID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsDogs]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsDogs]"
+                      name="CurrentallowsDogs"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">allowsDogs</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsCats]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrentallowsCats]"
+                      name="CurrentallowsCats"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">allowsCats</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrenthasDishwasher]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output].Columns[CurrenthasDishwasher]"
+                      name="CurrenthasDishwasher"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">hasDishwasher</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\load apartment - update\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Multicast.Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\load apartment - update\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Multicast.Outputs[Multicast Output 2]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\load apartment - update\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load apartment - update\Update Rows"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Update Rows"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE DimApartment SET [ValidToDate] = DATEADD(ss, -1, ?), [ActiveFlag] = 0 WHERE [ApartmentSourceID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load apartment - update\Update Rows.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-4E5QONU7.ApartmentsxCrimeDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].Columns[LoadTimestamp]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoadTimestamp"
+                      externalMetadataColumnId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output].Columns[LoadTimestamp]" />
+                    <inputColumn
+                      refId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].Columns[ApartmentSourceID]"
+                      cachedDataType="i8"
+                      cachedName="ApartmentSourceID"
+                      externalMetadataColumnId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output].Columns[ApartmentSourceID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="dbTimeStamp"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i8"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load apartment - update\Update Rows.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\load apartment - update.Paths[citynamefiltered]"
+              endId="Package\load apartment - update\Derived Column.Inputs[Derived Column Input]"
+              name="citynamefiltered"
+              startId="Package\load apartment - update\Conditional Split.Outputs[citynamefiltered]" />
+            <path
+              refId="Package\load apartment - update.Paths[DataModified]"
+              endId="Package\load apartment - update\Multicast.Inputs[Multicast Input 1]"
+              name="DataModified"
+              startId="Package\load apartment - update\Conditional Split 1.Outputs[DataModified]" />
+            <path
+              refId="Package\load apartment - update.Paths[Derived Column Output]"
+              endId="Package\load apartment - update\Lookup apartments exists.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\load apartment - update\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\load apartment - update.Paths[Flat File Source Output]"
+              endId="Package\load apartment - update\Conditional Split.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\load apartment - update\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\load apartment - update.Paths[Lookup Match Output]"
+              endId="Package\load apartment - update\Conditional Split 1.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\load apartment - update.Paths[Lookup No Match Output]"
+              endId="Package\load apartment - update\Insert Rows 1.Inputs[OLE DB Command Input]"
+              name="Lookup No Match Output"
+              startId="Package\load apartment - update\Lookup apartments exists.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\load apartment - update.Paths[Multicast Output 1]"
+              endId="Package\load apartment - update\Update Rows.Inputs[OLE DB Command Input]"
+              name="Multicast Output 1"
+              startId="Package\load apartment - update\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\load apartment - update.Paths[Multicast Output 3]"
+              endId="Package\load apartment - update\Insert Rows 2.Inputs[OLE DB Command Input]"
+              name="Multicast Output 3"
+              startId="Package\load apartment - update\Multicast.Outputs[Multicast Output 3]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\load apartment - update"
+          TopLeft="261.428575880674,152.176472722453" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\load apartment - update">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\load apartment - update\Insert Rows 2"
+          TopLeft="393,638.6" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\load apartment - update\Multicast"
+          TopLeft="301,544" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\load apartment - update\Conditional Split 1"
+          TopLeft="274.28571427355,460.6" />
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\load apartment - update\Insert Rows 1"
+          TopLeft="562,638.6" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\load apartment - update\Derived Column"
+          TopLeft="418,281.8" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\load apartment - update\Update Rows"
+          TopLeft="212,636.4" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\load apartment - update\Flat File Source"
+          TopLeft="414,99" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\load apartment - update\Lookup apartments exists"
+          TopLeft="387.619047606883,361.333333333333" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\load apartment - update\Conditional Split"
+          TopLeft="409,191" />
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[DataModified]"
+          TopLeft="358.442857136775,502.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.8"
+              Start="0,0"
+              End="0,34.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-29.21798828125,12.25107421875,58.4359765625,9.7978515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Multicast Output 3]"
+          TopLeft="379.666666666667,585.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85.3333333333335,52.9999999999999"
+              Start="0,0"
+              End="85.3333333333335,45.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.6184210526315" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.6184210526315"
+                    Point2="0,21.6184210526315"
+                    Point3="4,21.6184210526315" />
+                  <mssgle:LineSegment
+                    End="81.3333333333335,21.6184210526315" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.3333333333335,21.6184210526315"
+                    Point2="85.3333333333335,21.6184210526315"
+                    Point3="85.3333333333335,25.6184210526315" />
+                  <mssgle:LineSegment
+                    End="85.3333333333335,45.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Multicast Output 1]"
+          TopLeft="342.333333333333,585.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-60.3333333333333,50.8"
+              Start="0,0"
+              End="-60.3333333333333,43.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.7210526315789" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.7210526315789"
+                    Point2="0,20.7210526315789"
+                    Point3="-4,20.7210526315789" />
+                  <mssgle:LineSegment
+                    End="-56.3333333333333,20.7210526315789" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-56.3333333333333,20.7210526315789"
+                    Point2="-60.3333333333333,20.7210526315789"
+                    Point3="-60.3333333333333,24.7210526315789" />
+                  <mssgle:LineSegment
+                    End="-60.3333333333333,43.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Lookup No Match Output]"
+          TopLeft="519.08571427355,402.933333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="114.91428572645,235.666666666667"
+              Start="0,0"
+              End="114.91428572645,228.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.3933598937584" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91.3933598937584"
+                    Point2="0,95.3933598937584"
+                    Point3="4,95.3933598937584" />
+                  <mssgle:LineSegment
+                    End="110.91428572645,95.3933598937584" />
+                  <mssgle:CubicBezierSegment
+                    Point1="110.91428572645,95.3933598937584"
+                    Point2="114.91428572645,95.3933598937584"
+                    Point3="114.91428572645,99.3933598937584" />
+                  <mssgle:LineSegment
+                    End="114.91428572645,228.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="1.650756144475,100.393359893758,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Lookup Match Output]"
+          TopLeft="455.352380940216,402.933333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-99.4666666666662,57.666666666667"
+              Start="0,0"
+              End="-99.4666666666662,50.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3423638778222" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3423638778222"
+                    Point2="0,23.3423638778222"
+                    Point3="-4,23.3423638778222" />
+                  <mssgle:LineSegment
+                    End="-95.4666666666662,23.3423638778222" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-95.4666666666662,23.3423638778222"
+                    Point2="-99.4666666666662,23.3423638778222"
+                    Point3="-99.4666666666662,27.3423638778222" />
+                  <mssgle:LineSegment
+                    End="-99.4666666666662,50.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-97.9247200520831,28.3423638778222,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Flat File Source Output]"
+          TopLeft="487.7,140.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.4"
+              Start="0,0"
+              End="0,42.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[Derived Column Output]"
+          TopLeft="490.809523803442,323.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.9333333333329"
+              Start="0,0"
+              End="0,30.4333333333329">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.4333333333329" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load apartment - update.Paths[citynamefiltered]"
+          TopLeft="486.2,232.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.2000000000001,49.2"
+              Start="0,0"
+              End="8.2000000000001,41.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.6"
+                    Point2="0,24.6"
+                    Point3="4,24.6" />
+                  <mssgle:LineSegment
+                    End="4.2000000000001,24.6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.2000000000001,24.6"
+                    Point2="8.2000000000001,24.6"
+                    Point3="8.2000000000001,28.6" />
+                  <mssgle:LineSegment
+                    End="8.2000000000001,41.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-31.65259765625,29.6,71.5051953125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

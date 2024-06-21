@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ETL", "ETL.dtproj", "{834D3168-4422-4EA6-B24D-16B541E99C74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834D3168-4422-4EA6-B24D-16B541E99C74}.Development|Default.ActiveCfg = Development
+		{834D3168-4422-4EA6-B24D-16B541E99C74}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB2E5C5E-4481-4687-8F53-C0F7EB6307DB}
+	EndGlobalSection
+EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ETL", "ETL.dtproj", "{834D3168-4422-4EA6-B24D-16B541E99C74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834D3168-4422-4EA6-B24D-16B541E99C74}.Development|Default.ActiveCfg = Development
+		{834D3168-4422-4EA6-B24D-16B541E99C74}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB2E5C5E-4481-4687-8F53-C0F7EB6307DB}
+	EndGlobalSection
+EndGlobal
+>>>>>>> 5d57737d3c1acf3dd8b7b0012bdeba8a53657fef
