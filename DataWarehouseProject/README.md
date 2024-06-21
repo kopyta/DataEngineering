@@ -4,8 +4,11 @@ This is a comprehensive Data warehosue project involving:
 +  the configuration of the ETL pipeline,
 +  the seamless and efficient population and integration of the data into the predefined data warehouse,
 +  the in-depth analysis of insights using advanced Business Intelligence system.
+
+by Agata Kopyt and Tymoteusz Barciński
+
 # Data warehouse model
-![Data warehouse model diagram](/modelling/dwh_model.png)
+![Data warehouse model diagram](/DataWarehouseProject/modelling/dwh_model.png)
 
 # Reports
 
