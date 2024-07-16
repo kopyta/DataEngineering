@@ -5,7 +5,7 @@ This is a comprehensive Data warehosue project involving:
 +  the seamless and efficient population and integration of the data into the predefined data warehouse,
 +  the in-depth analysis of insights using advanced Business Intelligence system.
 
-by Agata Kopyt and Tymoteusz Barciński
+ Team members: Agata Kopyt, Tymoteusz Barciński
 
 # Data warehouse model
 ![Data warehouse model diagram](/DataWarehouseProject/modelling/dwh_model.png)
