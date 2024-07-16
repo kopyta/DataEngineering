@@ -7,4 +7,4 @@ This is a comprehensive Big Data project involving:
   
 The data was collected from the SpotifyAPI.
 
-by Agata Kopyt and Nikola Miszalska
+Team members: Agata Kopyt, Nikola Miszalska
